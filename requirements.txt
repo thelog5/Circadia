@@ -1,0 +1,52 @@
+# Delirium Bed - Project Requirements
+# Arduino IDE Version: 2.3.6
+
+# ---- Arduino Libraries (Library Manager) ----
+FastLED 3.6.0
+Adafruit VS1053 Library 1.2.1
+rgb_lcd (Grove - LCD RGB Backlight) 1.0.0
+
+# ---- Core / Built-In Arduino Libraries ----
+SPI
+Wire
+SD
+math.h
+
+# ---- Hardware Components ----
+
+# Microcontroller & Power
+- Arduino Uno (R3 or compatible)
+- USB cable for power + programming
+- 5V power supply (optional, if powering more LEDs or heater)
+
+# Lighting & Display
+- WS2812B LED strip (approx. 40 LEDs) on D3 (through 330 Ω resistor)
+- Grove RGB 16x2 I2C LCD (rgb_lcd)
+
+# Sensors
+- Thermistor temperature sensor on A1 (10 kΩ or 100 kΩ type, matched to B=4275, R0=100k)
+- Light sensor (photoresistor / light sensor module) on A3
+- Analog sound sensor / microphone module on A2
+
+# Audio
+- Adafruit VS1053 MP3 breakout (or compatible)
+- microSD card with:
+  - white.mp3 (white noise)
+  - xmas.mp3 (Christmas track)
+
+# Actuators / Outputs
+- 5V DC fan driven via MOSFET (mosfet_fan on D5)
+- 5V heating pad / resistive heater driven via MOSFET (mosfet_heat on D10)
+- WS2812B data line on D3 with 330 Ω series resistor
+
+# Switching & Protection
+- 2 x logic-level N-channel MOSFETs (for fan and heater)
+- Appropriate resistors (gate resistors, thermistor divider resistor)
+
+# User Input
+- Momentary pushbutton on CHRISTMAS_BUTTON_PIN (D4) wired to GND
+  (uses INPUT_PULLUP in code)
+
+# Misc
+- Breadboard and jumper wires
+- Optional: external 5V supply shared between LEDs, fan, heater (with common GND)
