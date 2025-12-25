@@ -87,6 +87,20 @@ This improves readability, debugging, and scalability.
 
 ---
 
-### Images / Demo
+### Physical Model
+<p align="center">
+  <img src="docs/model.jpg" width="600" />
+</p>
+<p align="center"><em>
+Physical model of the Circadia system showing the integrated enclosure, lighting, and control layout.
+</em></p>
+
+### Wiring Layout
+<p align="center">
+  <img src="docs/wiring.jpg" width="600" />
+</p>
+<p align="center"><em>
+Internal wiring layout illustrating sensor inputs, actuators, and microcontroller connections.
+</em></p>
 
 
