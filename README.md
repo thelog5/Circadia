@@ -1,6 +1,7 @@
 # Circadia
 
 Circadia is an Arduino-based smart environmental control system designed to reduce hospital-induced delirium by stabilizing light, sound, and temperature. The system creates a calmer, more predictable room environment to support sleep and reduce stress, especially for elderly patients.
+
 This repository is a personal copy of a group project created for portfolio and reference purposes.
 
 ---
